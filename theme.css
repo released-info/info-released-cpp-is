@@ -3,7 +3,7 @@
 
 /* TOP SECTION BACKGROUND COLOR */
 .released-info {
-  background-color: #00589d !important; /* change color */
+  background-color: #a8577e !important; /* change color */
 }
 .odometer.odometer-auto-theme .odometer-digit,
 .odometer.odometer-theme-train-station .odometer-digit {
@@ -15,7 +15,7 @@
 /* TOP SECTION FONT COLOR */
 .released-info,
 .released-info a {
-  color: #000 !important;  /* change color */
+  color: #f2f2f2 !important;  /* change color */
 }
 /* ----------------------------------------- */
 
@@ -23,7 +23,7 @@
 /* BOTTOM SECTION BACKGROUND COLOR */
 .posts-section,
 .btn-primary {
-  background-color: #ffd29d !important; /* change color */
+  background-color: #3b429f !important; /* change color */
 }
 /* ----------------------------------------- */
 
