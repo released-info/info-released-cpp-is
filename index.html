@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--timestamp=1757809450-->
+<!--timestamp=1790025384-->
 
 <head>
   <meta charset="UTF-8">
@@ -17,20 +17,20 @@
   <link rel="icon" href="https://released.info/assets/img/technologies/cpp/cpp.ico" type="image/svg+xml">
   <meta name="description" content="Is C++ 26 Released?">
   <meta name="keywords" content="c++, standard, cpp, cpp26, c++26, release, date, when, programming, language, development">
-  <meta name=”robots” content="index, follow">
+  <meta name="robots" content="index, follow">
 
   <!-- facebook -->
   <meta property="og:url" content="https://is.cpp.released.info" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Is C++ 26 Released?" />
-  <meta property="og:description" content="C++ 26 Standard will be released in 109 days! #released.info" />
+  <meta property="og:description" content="C++ 26 Standard is not released. Still waiting! #released.info" />
   <meta property="og:image" content="https://released.info/assets/img/technologies/cpp/cpp-logo.png" />
 
   <!-- twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="ReleasedInfo" />
   <meta name="twitter:title" content="Is C++ 26 Released?" />
-  <meta name="twitter:description" content="C++ 26 Standard will be released in 109 days! #released.info" />
+  <meta name="twitter:description" content="C++ 26 Standard is not released. Still waiting! #released.info" />
   <meta name="twitter:image" content="https://released.info/assets/img/technologies/cpp/cpp-logo.png" />
 
   <meta name="url" content="https://is.cpp.released.info" />
@@ -47,7 +47,7 @@
 
 <body>
 
-  <input id="released-days" type="hidden" value="109" />
+  <input id="released-days" type="hidden" value="-1" />
 
   <main role="main">
     <a href="https://released.info/index.html" class="go-back"><i class="bi bi-arrow-left"></i></a>
@@ -78,7 +78,7 @@
           <div class="col-lg-8">
 
             <div id="logo">
-              <span role="img" aria-label="${configuration.logoAlt}"
+              <span role="img" aria-label="C++ logo"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/cpp/cpp-logo.png&#39;);">
               </span>
             </div>
@@ -86,12 +86,13 @@
             <!-- CHOOSE ONE OF BELOW SECTIONS HERE -->
 
             
+            
+            <!-- A counter that reached zero falls back to "Not Yet" instead of an empty box until the state is updated -->
             <span>
-              <div class="odometer-content" id="counter">
-                <div id="odometer"></div>
+              <div class="white-box" id="not-yet">
+                Not Yet
               </div>
             </span>
-            
             
 
             <!-- END -->
@@ -101,10 +102,14 @@
         <div class="row">
           <div class="col-lg-8">
             <h3 id="highlightTextDescription1">
-              C++ is on a three-year release schedule, with C++26 the next planned standard in <span class="btn-primary">2026</span>
+              The C++26 draft was technically completed at the ISO meeting in London on <span class="btn-primary">28th March 2026</span>
             </h3>
           </div>
-          
+          <div class="col-lg-8">
+            <h4 id="highlightTextDescription2">
+              The ISO DIS ballot started on 31st July 2026 and closes on 23rd October 2026, publication is expected <span class="btn-primary">in late 2026 or early 2027</span>
+            </h4>
+          </div>
         </div>
         <div class="text-center">
           <a class="share-twitter" target="_blank">
@@ -125,19 +130,19 @@
 
             <ul>
               <li>
-                Reintroduction of contracts
+                Compile-time reflection
               </li>
             </ul>
 
             <ul>
               <li>
-                Inclusion of compile-time reflection capabilities
+                Contracts
               </li>
             </ul>
 
             <ul>
               <li>
-                AI and Parallel Processing Support:
+                std::execution senders and receivers
               </li>
             </ul>
 
@@ -145,27 +150,27 @@
           <div class="col-md-5">
             <ul>
               <li>
-                Unevaluated Strings
+                #embed for binary resources
               </li>
             </ul>
             <ul>
               <li>
-                Expanded Character Set
+                Pack indexing
               </li>
             </ul>
             <ul>
               <li>
-                constexpr Enhancements
+                Erroneous behaviour for uninitialized reads
               </li>
             </ul>
           </div>
         </div>
         <div class="text-center">
-          <a target="_blank" href="https://en.wikipedia.org/wiki/C%2B%2B23" class="btn btn-primary btn-lg">Read more</a>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/C%2B%2B26" class="btn btn-primary btn-lg">Read more</a>
         </div>
       </div>
       <div class="logo-container">
-        <span role="img" aria-label="${configuration.logoAlt2}"
+        <span role="img" aria-label="C++ logo"
           style="background-image: url(&#39;https://released.info/assets/img/technologies/cpp/cpp-logo2.png&#39;);">
         </span>
       </div>
@@ -182,7 +187,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: The C++ Programming Language"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/cpp/book-the-cpp-programming-language.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Bjarne-Stroustrup/dp/0321563840?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=5247ef6dd08235e68ec2f4e0efe04b8e&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -196,7 +201,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Programming: Principles and Practice Using C++"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/cpp/book-programming-principles-and-pracitice-using-cpp.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Bjarne-Stroustrup/dp/0321992784?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=df55827b7819da6c8072cdd84089f256&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -210,7 +215,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Beginning C++ Game Programming"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/cpp/book-beginning-cpp-game-progamming.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/John-Horton/dp/1838648577?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=2dd82aa8688e967591b8241b443febbf&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -224,7 +229,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: C++ Concurrency in Action"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/cpp/book-cpp-in-action.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Anthony-Williams/dp/1617294691?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=b8c95a7005e7187a86519e530ecf3a69&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -238,7 +243,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: C++ Primer"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/cpp/book-cpp-primer.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Stanley-B-Lippman/dp/0321714113?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=6ecab50a88b3974435ec9528b5408427&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -252,7 +257,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: A Tour of C++"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/cpp/book-a-tour-of-cpp.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Bjarne-Stroustrup/dp/0321958314?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=f370c1416a21a228e2ae08b71721ba22&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -326,12 +331,8 @@
         offer. <br />
         <br />
         <h3>Releases</h3>
-        The latest release of C++ came out to the public in December 2020.
-        This release was quite major, removing some obsolete features and functions, and adding many new
-        functionalities, operators, and features.
-        The previous version was C++17, released in 2017. Nowadays, we work with C++20, with no clear date for the next
-        release or revision,
-        not expected until a couple of years from the present 2021.
+        The latest published standard is C++23 (ISO/IEC 14882:2024), published in October 2024; C++20, published in December 2020, was the last really major revision, adding modules, coroutines, concepts and ranges.
+        C++26 was technically completed by the committee on 28th March 2026 and is in its final ISO ballot, with publication expected in late 2026 or early 2027; work on C++29 began in June 2026.
     </div>
 </div>
       </div>
